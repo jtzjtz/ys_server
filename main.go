@@ -4,7 +4,9 @@ import (
 	"flag"
 	"fmt"
 	"github.com/jtzjtz/ys_pack/proto/department_proto"
+	"github.com/jtzjtz/ys_pack/proto/sq_user_blacklist_proto"
 	"github.com/jtzjtz/ys_pack/server/controller/department_controller"
+	"github.com/jtzjtz/ys_pack/server/controller/sq_user_blacklist_controller"
 	"github.com/jtzjtz/ys_server/app/config"
 	"github.com/jtzjtz/ys_server/app/sqldb"
 	"google.golang.org/grpc"
@@ -55,6 +57,7 @@ func main() {
 
 	// 服务注册
 	department_proto.RegisterDepartmentServiceServer(s, &department_controller.DepartmentController{})
+	sq_user_blacklist_proto.RegisterSqUserBlacklistServiceServer(s, &sq_user_blacklist_controller.SqUserBlacklistController{})
 	//sq_admin_menu_proto.RegisterSqAdminMenuServiceServer(s, &sq_admin_menu_controller.SqAdminMenuController{})
 	//sq_user_blacklist_proto.RegisterSqUserBlacklistServiceServer(s, &sq_user_blacklist_controller.SqUserBlacklistController{})
 	//sq_ugc_log_proto.RegisterSqUgcLogServiceServer(s, &sq_ugc_log_controller.SqUgcLogController{})

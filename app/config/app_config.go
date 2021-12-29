@@ -10,7 +10,7 @@ var (
 )
 
 func Init(e string) (err error) {
-	SqlConfig.DbHost = "192.168.0.10"
+	SqlConfig.DbHost = "localhost"
 	SqlConfig.DbName = "hys_db"
 	SqlConfig.DbPort = "3306"
 	SqlConfig.DbPwd = "123456"

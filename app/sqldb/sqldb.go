@@ -1,10 +1,10 @@
 package sqldb
 
 import (
-	"github.com/jinzhu/gorm"
 	"github.com/jtzjtz/kit/conn/mysql_pool"
 	"github.com/jtzjtz/ys_pack/server/dao"
 	"github.com/jtzjtz/ys_server/app/config"
+	"gorm.io/gorm"
 )
 
 func Init() {

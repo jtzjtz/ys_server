@@ -16,7 +16,7 @@ func Init(e string) (err error) {
 	SqlConfig.DbPwd = "123456"
 	SqlConfig.DbUser = "root"
 	//nacasConfig := config.NacosConfig{
-	//	Address:             "10.31.114.24",
+	//	Address:             "localhost",
 	//	Port:                8848,
 	//	Scheme:              "http",
 	//	ContextPath:         "/nacos",
